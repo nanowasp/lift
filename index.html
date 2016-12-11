@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-  background: black url('img/lift_final.gif') center center fixed;
-}
-</style>
+	<meta charset="utf-8">
+
+	<title>Full Page Background Image | CSS #2</title>
+
+	<style>
+
+		#bg {
+			position:fixed;
+			top:0%;
+			left:0%;
+			width:100%;
+			height:100%;
+		}
+		#bg img {
+      background-color: black;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			min-width:100%;
+			min-height:100%;
+      max-width:100%;
+			max-height:100%;
+		}
+
+		#page-wrap { position: relative; z-index: 2; width: 400px; margin: 50px auto; padding: 20px; background: transparent; -moz-box-shadow: 0 0 20px transparent; -webkit-box-shadow: 0 0 20px transparent; box-shadow: 0 0 20px transparent; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; color: white;}
+	</style>
 </head>
+
 <body>
 
+	<div id="page-wrap">
+
+		<p></p>
+
+	</div>
+
+	<!-- At bottom, 'cause it's not really content -->
+	<div id="bg">
+		<img src="img/lift_desktop.gif" alt="">
+	</div>
+
 </body>
+
 </html>
